@@ -58,7 +58,7 @@ for n in range(N):
 	plt.plot(taus, corr[n,:]) 
 
 # Valor teórico de correlación
-Rww = 25*25 * np.cos(np.pi/4*taus)
+Rww = 25 * np.cos(np.pi/4*taus)
 
 # Gráficas de correlación para cada realización y la 
 plt.plot(taus, Rww, '-.', lw=4, label='Correlación teórica')
