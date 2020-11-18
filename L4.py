@@ -15,11 +15,11 @@ T = 100			# número de elementos
 t_final = 10	# tiempo en segundos
 t = np.linspace(0, t_final, T)
 
-# Inicialización del proceso aleatorio X(t) con N realizaciones
+# Inicialización del proceso aleatorio W(t) con N realizaciones
 N = 10
 W_t = np.empty((N, len(t)))	# N funciones del tiempo x(t) con T puntos
 
-# Creación de las muestras del proceso x(t) (A y Z independientes)
+# Creación de las muestras del proceso x(t) (X y Y independientes)
 for i in range(N):
 	X = vaX.rvs()
 	Y = vaY.rvs()
